@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    // Fungsi f
+    int f[6];
+    f[1] = 3;
+    f[2] = 5;
+    f[3] = 3;
+    f[4] = 1;
+    f[5] = 2;
+
+    // Fungsi g
+    int g[6];
+    g[1] = 4;
+    g[2] = 1;
+    g[3] = 1;
+    g[4] = 2;
+    g[5] = 3;
+
+    cout << "Fungsi Komposisi (g o f)" << endl;
+    cout << "========================" << endl;
+
+    // hitungan g(f(x))
+    for (int x = 1; x <= 5; x++) {
+
+        int hasilF = f[x];
+        int hasilKomposisi = g[hasilF];
+
+        cout << "(g o f)(" << x << ") = ";
+        cout << "g(f(" << x << ")) = ";
+        cout << "g(" << hasilF << ") = ";
+        cout << hasilKomposisi << endl;
+    }
+
+    return 0;
+}
