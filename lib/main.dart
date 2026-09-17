@@ -3,11 +3,7 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(const MyApp());
 }
-
-// =====================================================
-// APLIKASI UTAMA
-// =====================================================
-
+ 
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
@@ -16,8 +12,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  // 0 = Beranda, 1 = Kategori, 2 = Keranjang, 3 = Akun
-  // Nilai 2 membuat aplikasi langsung membuka My Cart.
+ 
   int currentPage = 2;
 
   final List<String> titles = const [
@@ -129,10 +124,6 @@ class _MyAppState extends State<MyApp> {
     );
   }
 }
-
-// =====================================================
-// HALAMAN BERANDA
-// =====================================================
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -271,10 +262,6 @@ class HomePage extends StatelessWidget {
   }
 }
 
-// =====================================================
-// HALAMAN KATEGORI
-// =====================================================
-
 class CategoryPage extends StatelessWidget {
   const CategoryPage({super.key});
 
@@ -381,10 +368,6 @@ class CategoryPage extends StatelessWidget {
   }
 }
 
-// =====================================================
-// DATA PRODUK
-// =====================================================
-
 class Product {
   Product({
     required this.name,
@@ -405,10 +388,6 @@ class Product {
   int likes;
   int quantity;
 }
-
-// =====================================================
-// HALAMAN KERANJANG
-// =====================================================
 
 class CartPage extends StatefulWidget {
   const CartPage({super.key});
@@ -838,10 +817,6 @@ class _CartPageState extends State<CartPage> {
     );
   }
 }
-
-// =====================================================
-// HALAMAN AKUN / PROFILE
-// =====================================================
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
